@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CEY Knowledge | Learn. Think. Grow.</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --neon-orange: #ff6a00;
+      --black: #0b0b0b;
+      --white: #ffffff;
+      --gray: #b5b5b5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1a1a1a, var(--black)),
+                  repeating-linear-gradient(45deg, rgba(255,106,0,0.04) 0, rgba(255,106,0,0.04) 1px, transparent 1px, transparent 12px);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 40px 25px;
+      box-shadow: 0 0 60px rgba(255, 106, 0, 0.25);
+      border: 1px solid rgba(255, 106, 0, 0.35);
+      animation: floatIn 1.2s ease forwards;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--neon-orange);
+      box-shadow: 0 0 30px rgba(255, 106, 0, 0.9);
+      overflow: hidden;
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--neon-orange);
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 14px;
+      color: var(--gray);
+      margin-bottom: 22px;
+    }
+
+    .intro {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      margin-bottom: 16px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--neon-orange), #ff8c32);
+      box-shadow: 0 0 20px rgba(255, 106, 0, 0.45);
+      transition: all 0.25s ease;
+    }
+
+    .links a:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 0 45px rgba(255, 106, 0, 1);
+    }
+
+    .links a.secondary {
+      background: transparent;
+      border: 1px solid var(--neon-orange);
+      box-shadow: none;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: var(--gray);
+      opacity: 0.8;
+    }
+
+    .footer span {
+      color: var(--neon-orange);
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  @keyframes pulseGlow {
+      0% { box-shadow: 0 0 18px rgba(255,106,0,0.6); }
+      50% { box-shadow: 0 0 40px rgba(255,106,0,1); }
+      100% { box-shadow: 0 0 18px rgba(255,106,0,0.6); }
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <!-- Replace logo.png with your actual logo file -->
+      <img src="https://github.com/sachiththa2000/Cey-Knowledge/blob/main/Logo.jpg?raw=true" alt="CEY Knowledge Logo">
+    </div>
+
+    <h1>CEY KNOWLEDGE</h1>
+    <div class="tagline">Learn • Think • Grow</div>
+
+    <div class="intro">
+      Bite-sized educational content built for <strong>Sri Lankan youth</strong> 🇱🇰<br>
+      Psychology • Mindset • Productivity • Life Skills
+    </div>
+
+    <!-- LINKS -->
+    <div class="links">
+      <a href="https://www.youtube.com/@CeyKnowledge" target="_blank">🎥 YouTube Channel</a>
+      <a href="https://www.instagram.com/ceyknowledge/" target="_blank" class="secondary">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@cey_knowledge" target="_blank" class="secondary">🎵 TikTok</a>
+      <a href="https://web.facebook.com/CEYKNOWLEDGE" target="_blank" class="secondary">📘 Facebook</a>
+    </div>
+
+    <div class="footer">
+      © 2026 <span>CEY Knowledge</span><br>
+      Knowledge that compounds 📚
+    </div>
+
+  </div>
+
+</body>
+</html>
